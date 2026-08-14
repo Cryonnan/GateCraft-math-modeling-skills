@@ -9,8 +9,7 @@
     "cordis.patch.yml",
     "skills",
     "assets",
-    "presets",
-    "README.md"
+    "presets", "README.md", "README.en.md"
   ],
   "license": "MIT",
   "homepage": "https://github.com/Cryonnan/GateCraft-math-modeling-skills",

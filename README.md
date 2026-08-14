@@ -1,4 +1,6 @@
-# GateCraft（门控工艺）
+# GateCraft
+
+[English](README.en.md) | 中文
 
 > 门控式数学建模 skill 套件（8 skills + DSH 预设）for DeepSeek Harness。**不无脑全流程**——agent 负责求解与质检，人在每个阶段门思考与决策，做出有自己的品味的建模结果。
 
