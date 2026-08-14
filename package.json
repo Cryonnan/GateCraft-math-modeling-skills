@@ -1,7 +1,7 @@
 {
   "name": "gatecraft",
   "version": "0.1.0",
-  "description": "GateCraft（门控工艺）：门控式数学建模 skill 套件（competition-workflow 五阶段流水线 + 阶段门 + 国奖写作范式 + 质检与流程图生成器）—— 可被 dsh plugin add 安装的 DeepSeek Harness 插件。",
+  "description": "GateCraft（门控工艺）：门控式数学建模 skill 套件 for DeepSeek Harness——五阶段流水线、阶段门、国奖写作范式与脚本化质检；agent 求解质检，人在阶段门思考决策。",
   "type": "module",
   "main": "index.js",
   "files": [
