@@ -79,15 +79,6 @@ index.js + cordis.patch.yml + package.json   dsh bundle 打包
 
 </details>
 
-## 收录与投稿
-
-- 仓库 topics：`dsh-plugin` `deepseek-harness` `math-modeling` `skills` `cumcm`（加入后自动出现在 [topics/dsh-plugin](https://github.com/topics/dsh-plugin)）
-- 投稿 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)：PR 在 README.md 与 README.zh.md 的 `### Skills` 下各加一行：
-
-```markdown
-- [Cryonnan/GateCraft-math-modeling-skills](https://github.com/Cryonnan/GateCraft-math-modeling-skills) - GateCraft（门控工艺）：门控式数学建模 skill 套件（8 skills + DSH 预设）——五阶段流水线、阶段门、国奖写作范式、流程图 spec→drawio 生成与 OCR 复核闭环。
-```
-
 ## License
 
 MIT。贡献 PR 请遵循统一格式：`要求 / 判定标准（可判定） / 正面样本（带页码） / 反例（带页码）`——每个检查项都必须来自真实的翻车或真实的获奖。

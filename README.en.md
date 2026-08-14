@@ -79,15 +79,6 @@ index.js + cordis.patch.yml + package.json   dsh bundle packaging
 
 </details>
 
-## Discovery & Submission
-
-- Repo topics: `dsh-plugin` `deepseek-harness` `math-modeling` `skills` `cumcm` (appears automatically on [topics/dsh-plugin](https://github.com/topics/dsh-plugin))
-- Submit to [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin): PR one line under `### Skills` in both README.md and README.zh.md:
-
-```markdown
-- [Cryonnan/GateCraft-math-modeling-skills](https://github.com/Cryonnan/GateCraft-math-modeling-skills) - GateCraft: a gated math-modeling skill suite (8 skills + DSH preset) — five-stage pipeline, stage gates, award-paper writing patterns, and a spec→drawio flowchart loop with OCR verification.
-```
-
 ## License
 
 MIT. Contributions follow one format: `requirement / decidable criterion / positive sample (with page) / counterexample (with page)` — every checklist item must come from a real failure or a real award.
