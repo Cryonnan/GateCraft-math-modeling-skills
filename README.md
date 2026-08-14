@@ -81,6 +81,12 @@ $env:SILICONFLOW_API_KEY = "你的key"   # 在 https://cloud.siliconflow.cn/me/m
 - **自接其他视觉模型**：改 `skills/vision-ocr/SKILL.md` 模板与 `assets/ocr_batch.py` 顶部的 `BASE_URL`/`MODEL` 即可（OpenAI 兼容接口）。
 - 无任何视觉通道时的兜底：流程图走"规格→drawio/PNG 生成→OCR 读回复核"闭环（见 `figure-playbook.md` 第 4 节），不靠眼睛也能验收。
 
+## 适用声明（务必先读）
+
+本流程的**训练与实战验证范围**：统计分析类 + 优化/决策类赛题——即一般数学建模竞赛的 **C 题**（2023C 蔬菜定价、2024C 种植、2025C NIPT、华数杯 C 算电协同、泰迪杯 C 事件驱动、大湾区杯 B 稳定币）。机理/物理仿真类（A 类）、图论/工程结构类（B 类）**未经实战验证**，使用时需自行扩展决策树与检查项。
+
+完整创作过程、每轮升级的细节与踩坑记录见 **[CREATION.md](CREATION.md)**。
+
 ## 与 MathModelAgent 的关系：协作，不复制
 
 [MathModelAgent](https://github.com/jihe520/MathModelAgent)（3455★）是"自动完成建模、直接出可提交论文"的全流程 agent，求解机制齐全。本项目与它的分工：
@@ -135,4 +141,4 @@ $env:SILICONFLOW_API_KEY = "你的key"   # 在 https://cloud.siliconflow.cn/me/m
 
 ## License
 
-MIT（`package.json` 已声明；上传前请把 LICENSE 文件一并加入仓库）。欢迎 PR：新检查项、新题型模板、新实证页码引用。
+MIT（见 [LICENSE](LICENSE)）。欢迎 PR：新检查项、新题型模板、新实证页码引用——提交格式见 [CREATION.md](CREATION.md) 第四节。
