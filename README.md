@@ -1,4 +1,4 @@
-# GateCraft（门控工艺）· 数学建模模式 for DeepSeek Harness
+﻿# GateCraft（门控工艺）· 数学建模模式 for DeepSeek Harness
 
 **门控式数学建模 skill 套件 + DSH 预设**：把全国大学生数学建模竞赛的完整解题与写作方法论，固化为可复用的检查项工作流——**不无脑全流程，让每个阶段门都有证据、可判定、可人工干预**。
 
@@ -37,7 +37,7 @@ sync.ps1                   # 一键分发到 5 个工具目标（$HOME 自动探
 # 通过 dsh 插件市场图形界面搜索 "gatecraft" 安装，或命令行：
 dsh plugin add gatecraft                    # npm 发布后
 # 或直接从 git 安装：
-dsh plugin add <你的GitHub用户名>/<仓库名>
+dsh plugin add Cryonnan/GateCraft-math-modeling-skills
 ```
 
 安装后 9 个 skill 随 profile 生效，无需手动复制到 `.agents/skills`。`presets/math-modeling/` 预设为可选增强（复制到 `${DSH_HOME:-$HOME}/.dsh/.agent-presets/math-modeling/` 后可让新会话自动进入建模工作流）。
@@ -136,7 +136,7 @@ $env:SILICONFLOW_API_KEY = "你的key"   # 在 https://cloud.siliconflow.cn/me/m
 - 投稿 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 精选列表：PR 在 `README.md` 与 `README.zh.md` 的 `### Skills` 分类下各加一行：
 
 ```markdown
-- [<your-name>/gatecraft](https://github.com/<your-name>/gatecraft) - GateCraft（门控工艺）：门控式数学建模 skill 套件（9 skills + DSH 预设）——五阶段流水线、阶段门、国奖写作范式、流程图 spec→drawio 生成与 OCR 复核闭环。
+- [Cryonnan/GateCraft-math-modeling-skills](https://github.com/Cryonnan/GateCraft-math-modeling-skills) - GateCraft（门控工艺）：门控式数学建模 skill 套件（9 skills + DSH 预设）——五阶段流水线、阶段门、国奖写作范式、流程图 spec→drawio 生成与 OCR 复核闭环。
 ```
 
 ## License

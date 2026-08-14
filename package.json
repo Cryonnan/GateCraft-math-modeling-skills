@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "gatecraft",
   "version": "0.1.0",
   "description": "GateCraft（门控工艺）：门控式数学建模 skill 套件 for DeepSeek Harness——五阶段流水线、阶段门、国奖写作范式与脚本化质检；agent 求解质检，人在阶段门思考决策。",
@@ -13,7 +13,7 @@
     "README.md"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/<your-name>/<repo>",
+  "homepage": "https://github.com/Cryonnan/GateCraft-math-modeling-skills",
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
