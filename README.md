@@ -29,7 +29,20 @@ sync.ps1                   # 一键分发到 5 个工具目标（$HOME 自动探
 
 ## 快速开始
 
-### 1. 安装 skills（任选一个工具即可）
+### 0. 一键安装（DeepSeek Harness 插件市场 / dsh plugin add）
+
+本仓库是标准 dsh 插件包（`package.json` 含 `dsh.bundle` 清单 + `cordis.patch.yml` + `index.js` 注册全部 9 个 skill）：
+
+```sh
+# 通过 dsh 插件市场图形界面搜索 "math-modeling" 安装，或命令行：
+dsh plugin add math-modeling-skills        # npm 发布后
+# 或直接从 git 安装：
+dsh plugin add <你的GitHub用户名>/<仓库名>
+```
+
+安装后 9 个 skill 随 profile 生效，无需手动复制到 `.agents/skills`。`presets/math-modeling/` 预设为可选增强（复制到 `${DSH_HOME:-$HOME}/.dsh/.agent-presets/math-modeling/` 后可让新会话自动进入建模工作流）。
+
+### 1. 手动安装 skills（跨 opencode/claude/codex/DSH/cc-switch 五工具）
 
 ```powershell
 # Windows PowerShell：仓库根目录执行，一键分发到全部 5 个工具
@@ -111,6 +124,15 @@ $env:SILICONFLOW_API_KEY = "你的key"   # 在 https://cloud.siliconflow.cn/me/m
 - 反例证据均为"事实陈述+页码"，不附带他人论文内容；
 - 实测数字（如华数杯 C 题 RMSE 96.06）为可公开的结果数据。
 
+## 收录与投稿状态
+
+- 仓库添加 topics：`dsh-plugin`、`deepseek-harness`、`math-modeling`、`skills`、`cumcm` → 自动出现在 [GitHub dsh-plugin 话题页](https://github.com/topics/dsh-plugin)。
+- 投稿 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 精选列表：PR 在 `README.md` 与 `README.zh.md` 的 `### Skills` 分类下各加一行：
+
+```markdown
+- [<your-name>/math-modeling-skills](https://github.com/<your-name>/math-modeling-skills) - 门控式数学建模 skill 套件（9 skills + DSH 预设）：五阶段流水线、阶段门、国奖写作范式、流程图 spec→drawio 生成与 OCR 复核闭环。
+```
+
 ## License
 
-待定（发布前选定，建议 MIT）。欢迎 PR：新检查项、新题型模板、新实证页码引用。
+MIT（`package.json` 已声明；上传前请把 LICENSE 文件一并加入仓库）。欢迎 PR：新检查项、新题型模板、新实证页码引用。

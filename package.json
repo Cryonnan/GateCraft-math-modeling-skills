@@ -1,0 +1,33 @@
+{
+  "name": "math-modeling-skills",
+  "version": "0.1.0",
+  "description": "门控式数学建模 skill 套件（competition-workflow 五阶段流水线 + 国奖写作范式 + 质检与流程图生成器）—— 可被 dsh plugin add 安装的 DeepSeek Harness 插件。",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills",
+    "assets",
+    "presets",
+    "README.md"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/<your-name>/<repo>",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "math-modeling",
+    "cumcm",
+    "huashubei",
+    "skills",
+    "agent",
+    "workflow"
+  ],
+  "dsh": {
+    "bundle": ""
+  },
+  "dependencies": {
+    "yaml": "^2.4.2"
+  }
+}
