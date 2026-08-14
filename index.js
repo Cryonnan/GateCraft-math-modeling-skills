@@ -1,12 +1,12 @@
-/**
+﻿/**
  * DeepSeek Harness (dsh) bundle entry: registers every packaged
  * `skills/<name>/SKILL.md` bundle in this package on `ctx.skills`, so the
- * math-modeling skills ship with the profile instead of having to be copied
+ * GateCraft skills ship with the profile instead of having to be copied
  * into a project's `.agents/skills` directory.
  *
  * Pattern follows the ecosystem standard skill-pack bundle
  * (e.g. zhaiyateng/dsh-design-skills, MIT).
- * @module math-modeling-skills
+ * @module gatecraft
  */
 
 import { readdirSync, readFileSync } from 'node:fs'
@@ -18,10 +18,10 @@ import { parse as parseYaml } from 'yaml'
 /** Same rank as packaged dsh skill providers (`BUNDLED_SKILL_RANK` in `@deepseek-ai/dsh-skill`). */
 const BUNDLED_SKILL_RANK = 600
 const SKILL_NAME = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
-const PROVIDER_NAME = 'math-modeling-skills'
+const PROVIDER_NAME = 'gatecraft'
 const SKILLS_ROOT = fileURLToPath(new URL('./skills/', import.meta.url))
 
-export const name = 'math-modeling-skills'
+export const name = 'gatecraft'
 export const inject = ['skills']
 
 /**
@@ -30,7 +30,7 @@ export const inject = ['skills']
  */
 export function apply(ctx) {
   if (loadSkillsSync().length === 0) {
-    throw new Error(`math-modeling-skills: no SKILL.md bundles found under ${SKILLS_ROOT}`)
+    throw new Error(`gatecraft: no SKILL.md bundles found under ${SKILLS_ROOT}`)
   }
   ctx.skills.registerProvider(() => ({
     name: PROVIDER_NAME,
@@ -77,15 +77,15 @@ function loadSkillsSync() {
 function parseSkill(raw, directory, skillFile) {
   const parsed = parseFrontmatter(raw)
   if (parsed === undefined) {
-    throw new Error(`math-modeling-skills: ${skillFile} is missing YAML frontmatter`)
+    throw new Error(`gatecraft: ${skillFile} is missing YAML frontmatter`)
   }
   const skillName = stringField(parsed.data, 'name')
   const description = stringField(parsed.data, 'description')
   if (skillName === undefined || description === undefined) {
-    throw new Error(`math-modeling-skills: ${skillFile} frontmatter requires name and description`)
+    throw new Error(`gatecraft: ${skillFile} frontmatter requires name and description`)
   }
   if (!SKILL_NAME.test(skillName)) {
-    throw new Error(`math-modeling-skills: invalid skill name "${skillName}"`)
+    throw new Error(`gatecraft: invalid skill name "${skillName}"`)
   }
   return {
     name: skillName,
@@ -108,7 +108,7 @@ function sortSkills(skills) {
   const names = new Set()
   for (const skill of skills) {
     if (names.has(skill.name)) {
-      throw new Error(`math-modeling-skills: duplicate skill name "${skill.name}"`)
+      throw new Error(`gatecraft: duplicate skill name "${skill.name}"`)
     }
     names.add(skill.name)
   }
