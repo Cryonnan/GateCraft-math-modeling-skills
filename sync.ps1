@@ -1,4 +1,4 @@
-# =====================================================================
+﻿# =====================================================================
 #  ai-skills skill distribution script (single source of truth -> mirrors)
 #
 #  Source : <repo>\skills  +  assets\（repo = 本脚本所在目录，可 fork 到任意位置）
@@ -28,7 +28,7 @@ $src  = Join-Path $repo 'skills'
 
 # ---- common skill list (9, identical for every target) ----
 $common = @(
-    'competition-workflow', 'guozhan-paper', 'linear-regression-hw',
+    'competition-workflow', 'guozhan-paper',
     'math-modeling-paper', 'math-paper-template', 'sensitivity-analysis',
     'statistical-diagnosis', 'tex-pdf-image-to-word', 'vision-ocr'
 )

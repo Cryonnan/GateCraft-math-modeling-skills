@@ -21,7 +21,7 @@
 ## 组成
 
 ```
-skills/                    # 9 个 skill（跨 opencode/claude/codex/DSH/cc-switch 五工具）
+skills/                    # 8 个 skill（跨 opencode/claude/codex/DSH/cc-switch 五工具）
   competition-workflow/    # 总控：五阶段流水线 + 阶段门 + EDA五问 + 验证三件套 + 脚本化验收
   guozhan-paper/           # 国奖写作范式：每问七段式 + 衔接四要求(R1-R4) + 严谨性规范 + 流程图两层规范
   vision-ocr/              # 读题/读范文：8B 提速 + 32B 关键页复核 + 断点续传
@@ -30,7 +30,6 @@ skills/                    # 9 个 skill（跨 opencode/claude/codex/DSH/cc-swit
   math-modeling-paper/     # 内容规范与严谨性审查
   math-paper-template/     # LaTeX 排版工程
   tex-pdf-image-to-word/   # Word 交付路线
-  linear-regression-hw/    # 回归分析作业助手
 assets/                    # 决策表与生成器（随 skills 同步分发）
   optimization-playbook.md # 优化类求解降级链/验证三件套/多目标前沿诊断（华数杯 C 题实测）
   figure-playbook.md       # 流程图两层模板 + 图型模板 + 规格→drawio 生成链路
@@ -45,7 +44,7 @@ sync.ps1                   # 一键分发到 5 个工具目标（$HOME 自动探
 
 ### 0. 一键安装（DeepSeek Harness 插件市场 / dsh plugin add）
 
-本仓库是标准 dsh 插件包（`package.json` 含 `dsh.bundle` 清单 + `cordis.patch.yml` + `index.js` 注册全部 9 个 skill）：
+本仓库是标准 dsh 插件包（`package.json` 含 `dsh.bundle` 清单 + `cordis.patch.yml` + `index.js` 注册全部 8 个 skill）：
 
 ```sh
 # 通过 dsh 插件市场图形界面搜索 "gatecraft" 安装，或命令行：
@@ -54,7 +53,7 @@ dsh plugin add gatecraft                    # npm 发布后
 dsh plugin add Cryonnan/GateCraft-math-modeling-skills
 ```
 
-安装后 9 个 skill 随 profile 生效，无需手动复制到 `.agents/skills`。`presets/math-modeling/` 预设为可选增强（复制到 `${DSH_HOME:-$HOME}/.dsh/.agent-presets/math-modeling/` 后可让新会话自动进入建模工作流）。
+安装后 8 个 skill 随 profile 生效，无需手动复制到 `.agents/skills`。`presets/math-modeling/` 预设为可选增强（复制到 `${DSH_HOME:-$HOME}/.dsh/.agent-presets/math-modeling/` 后可让新会话自动进入建模工作流）。
 
 ### 1. 手动安装 skills（跨 opencode/claude/codex/DSH/cc-switch 五工具）
 
@@ -150,7 +149,7 @@ $env:SILICONFLOW_API_KEY = "你的key"   # 在 https://cloud.siliconflow.cn/me/m
 - 投稿 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 精选列表：PR 在 `README.md` 与 `README.zh.md` 的 `### Skills` 分类下各加一行：
 
 ```markdown
-- [Cryonnan/GateCraft-math-modeling-skills](https://github.com/Cryonnan/GateCraft-math-modeling-skills) - GateCraft（门控工艺）：门控式数学建模 skill 套件（9 skills + DSH 预设）——五阶段流水线、阶段门、国奖写作范式、流程图 spec→drawio 生成与 OCR 复核闭环。
+- [Cryonnan/GateCraft-math-modeling-skills](https://github.com/Cryonnan/GateCraft-math-modeling-skills) - GateCraft（门控工艺）：门控式数学建模 skill 套件（8 skills + DSH 预设）——五阶段流水线、阶段门、国奖写作范式、流程图 spec→drawio 生成与 OCR 复核闭环。
 ```
 
 ## License
